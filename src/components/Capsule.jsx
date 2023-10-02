@@ -3,7 +3,7 @@ import React from 'react';
 function Capsule({ capsule_id, details, original_launch, missions, landings }) {
 	const datePart = original_launch && typeof original_launch === 'string' ? original_launch.split('T')[0] : original_launch;
 	return (
-		<div className='border rounded-lg p-5 w-[20em] h-100 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500'>
+		<div className='border rounded-lg p-5 w-[20em] h-100 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 hover:cursor-pointer'>
 			<p className='text-zinc-100'>
 				<b className='text-amber-950'>Capsule ID: </b> {capsule_id}
 			</p>

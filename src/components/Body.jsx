@@ -34,7 +34,7 @@ const Body = () => {
 
 	return (
 		<div className='flex justify-center flex-col'>
-			<div className='m-10 self-center flex justify-center'>
+			<div className='m-10 self-center flex justify-center w-full sm:w-99 p-1'>
 				<div className='border p-2'>
 					<p className='text-l font-bold'>Status</p>
 					{/* Status filter dropdown */}
