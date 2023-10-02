@@ -77,6 +77,8 @@ const Body = () => {
 							original_launch={capsule.original_launch}
 							missions={capsule.missions}
 							landings={capsule.landings}
+							reuse_count={capsule.reuse_count}
+							status={capsule.status}
 						/>
 					))
 				)}
