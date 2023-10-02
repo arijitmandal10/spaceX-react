@@ -69,18 +69,7 @@ const Body = () => {
 				{capsules.length === 0 ? (
 					<p className='text-xl font-bold text-red-700'>No capsules available.</p>
 				) : (
-					capsules.map((capsule, index) => (
-						<Capsule
-							key={index}
-							capsule_id={capsule.capsule_id}
-							details={capsule.details}
-							original_launch={capsule.original_launch}
-							missions={capsule.missions}
-							landings={capsule.landings}
-							reuse_count={capsule.reuse_count}
-							status={capsule.status}
-						/>
-					))
+					capsules.map((capsule, index) => <Capsule key={index} {...capsule} />)
 				)}
 			</div>
 		</div>
